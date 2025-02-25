@@ -1,6 +1,7 @@
 import cv2
 import numpy as np
 from decorators import decorator
+import sys
 
 
 @decorator
@@ -74,11 +75,23 @@ def laplacian(img):
 
 
 def main():
-    # color_mask()
-    # contours()
-    # grayscale()
-    sobel()
-    # laplacian()
+
+    methods = {
+        "color_mask": color_mask,
+        "contours": contours,
+        "sobel": sobel,
+        "laplacian": laplacian,
+    }
+
+    if len(sys.argv) < 2:
+        print(f"Please provide at least one method to run: {', '.join(methods.keys())}")
+        sys.exit(1)
+
+    for method in sys.argv[1:]:
+        if method in methods:
+            methods[method]()
+        else:
+            print(f"Method {method} not recognized.")
 
 
 if __name__ == "__main__":
