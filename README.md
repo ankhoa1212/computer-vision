@@ -26,7 +26,7 @@ To install the necessary dependencies, run:
 ```
 pip install -r requirements.txt
 ```
-A video apparatus (such as a webcam) will be needed to run the program.
+A video apparatus (such as a webcam) will be needed to run the program. A phone can also be used by using the [DroidCam app](https://droidcam.app/)
 ## Usage
 To run the code, you can use the following command:
 ```
@@ -41,27 +41,14 @@ python main.py <method_name_1> <method_name_2>
 #### Prerequisites
 Before running the `object_detection.py` script, navigate to the object_detection folder
 
-Navigate to the `object_detection` folder using the following command:
-```bash
-cd object_detection
-```
-Install the dependencies from `object_detection_requirements.txt`
-
-## Steps to Run the Script
-
-1. **Clone the Repository (if applicable)**:
-    If the script is part of a repository, clone it using:
+1. Navigate to the `object_detection` folder using the following command:
     ```bash
-    git clone <repository_url>
-    cd <repository_directory>
+    cd object_detection
     ```
-
-2. **Install Dependencies**:
-    Install the required dependencies by running:
+2. Install the dependencies from `object_detection_requirements.txt`
     ```bash
-    pip install -r requirements.txt
+    pip install -r object_detection_requirements.txt
     ```
-    Ensure that the `requirements.txt` file is present in the same directory as the script.
 
 3. **Run the Script**:
     Execute the `object_detection` script using:
@@ -69,12 +56,7 @@ Install the dependencies from `object_detection_requirements.txt`
     python object_detection.py
     ```
 
-4. **Additional Configuration (if any)**:
-    If the script requires specific configuration files or environment variables, ensure they are properly set up before running the script.
 
-## Notes
-- If you encounter any issues, verify that all dependencies are installed correctly and that your Python version is compatible.
-- Refer to the script's README or comments for additional details or troubleshooting steps.
 ## Techniques
 This repository includes implementations of the following computer vision techniques:
 - color masking
