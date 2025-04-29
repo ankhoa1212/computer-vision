@@ -28,3 +28,4 @@ This repository includes implementations of the following computer vision techni
 - contours
 - sobel filter
 - laplacian filter
+- convolutional neural network
