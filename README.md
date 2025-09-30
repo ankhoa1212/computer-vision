@@ -8,6 +8,7 @@ This repository contains code for computer vision techniques on live video feed.
 - [Techniques](#techniques)
 
 ## Installation
+Python3 is required to run this program. It can be installed from [here](https://www.python.org/downloads/) if needed.
 
 To avoid dependency conflicts, it is recommended to use a virtual environment. You can create and activate one using the following commands:
 
